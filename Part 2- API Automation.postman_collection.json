@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "aa7f3896-3271-4bf5-bbd1-7f2fb923eed5",
+		"name": "Part 2: API Automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=London,&appid=9de243494c0b295cca9337e1e96b00e2",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London,"
+						},
+						{
+							"key": "appid",
+							"value": "9de243494c0b295cca9337e1e96b00e2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Success-case",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q= Glasgow &appid=9de243494c0b295cca9337e1e96b00e2",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": " Glasgow "
+						},
+						{
+							"key": "appid",
+							"value": "9de243494c0b295cca9337e1e96b00e2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Failed-case",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Liverpool,&appid=9de243494c0b295cca9337e1e96b00e2",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Liverpool,"
+						},
+						{
+							"key": "appid",
+							"value": "9de243494c0b295cca9337e1e96b00e2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bristol",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Bristol,&appid=9de243494c0b295cca9337e1e96b00e2",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Bristol,"
+						},
+						{
+							"key": "appid",
+							"value": "9de243494c0b295cca9337e1e96b00e2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Birmingham",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Birmingham,&appid=9de243494c0b295cca9337e1e96b00e2",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Birmingham,"
+						},
+						{
+							"key": "appid",
+							"value": "9de243494c0b295cca9337e1e96b00e2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "city_name",
+			"value": ""
+		},
+		{
+			"key": "city_name1",
+			"value": ""
+		}
+	]
+}
